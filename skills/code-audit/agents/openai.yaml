@@ -1,0 +1,7 @@
+interface:
+  display_name: "Code Auditor"
+  short_description: "Find, prioritize, and fix code risks."
+  brand_color: "#DC2626"
+  default_prompt: "Use $code-audit to audit this code and prioritize actionable findings."
+policy:
+  allow_implicit_invocation: true

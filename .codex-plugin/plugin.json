@@ -1,0 +1,52 @@
+{
+  "name": "codex-comprehensive-orchestrator",
+  "version": "0.4.0",
+  "description": "A domain-agnostic Codex orchestration plugin with capability-aware model routing, bounded delegation, artifact workflows, research, computer operation, security triage, science, humanities, and verification.",
+  "author": {
+    "name": "Codex Local Tools"
+  },
+  "license": "MIT",
+  "keywords": [
+    "universal-agent",
+    "orchestration",
+    "documents",
+    "slides",
+    "spreadsheets",
+    "computer-use",
+    "cybersecurity",
+    "research",
+    "simulation",
+    "biology",
+    "humanities",
+    "model-routing",
+    "multimodal",
+    "delegation",
+    "capability-routing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Universal Orchestrator",
+    "shortDescription": "Route, execute, verify, and synthesize work across domains.",
+    "longDescription": "A domain-agnostic orchestration layer for Codex. It classifies goals, checks available tools and model capabilities, selects local skills or explicitly configured helper models, delegates bounded work, applies execution-time safety guidance, and returns one evidence-backed answer or artifact. It does not itself provide antivirus, browser control, unlimited model access, or a security authorization boundary.",
+    "developerName": "Codex Local Tools",
+    "category": "Productivity",
+    "capabilities": [
+      "Plan",
+      "Create",
+      "Analyze",
+      "Research",
+      "Operate",
+      "Verify",
+      "Synthesize",
+      "CapabilityCheck",
+      "ModelSelect",
+      "Delegate"
+    ],
+    "defaultPrompt": [
+      "Use this plugin to classify the task, check current capabilities, and choose the safest effective execution path.",
+      "Complete the requested code, document, presentation, spreadsheet, research, science, humanities, or computer task end to end with verification.",
+      "If a required modality or quality level is unavailable, use only explicitly configured helper models or ask me for the missing configuration; never invent a provider or expose secrets."
+    ],
+    "brandColor": "#4F46E5"
+  }
+}

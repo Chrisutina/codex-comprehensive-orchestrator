@@ -1,0 +1,9 @@
+# Python and local development artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local credentials and private model configuration
+.env
+.env.*
+model_catalog.json

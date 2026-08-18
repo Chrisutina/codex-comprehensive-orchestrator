@@ -1,0 +1,7 @@
+interface:
+  display_name: "Problem Solver"
+  short_description: "Turn complex questions into clear decisions."
+  brand_color: "#7C3AED"
+  default_prompt: "Use $problem-solving to analyze this question and give a verified recommendation."
+policy:
+  allow_implicit_invocation: true

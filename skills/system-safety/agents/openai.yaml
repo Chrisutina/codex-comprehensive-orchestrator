@@ -1,0 +1,7 @@
+interface:
+  display_name: "System Safety"
+  short_description: "Triage malware indicators without unsafe actions."
+  brand_color: "#DC2626"
+  default_prompt: "Use $system-safety to complete this task with evidence and verification."
+policy:
+  allow_implicit_invocation: true

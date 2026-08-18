@@ -1,0 +1,129 @@
+{
+  "current_model": {
+    "id": "host-current",
+    "provider": "host",
+    "capabilities": ["text", "reasoning", "code", "planning"],
+    "configured": true,
+    "enabled": true,
+    "quality_tier": 3,
+    "cost_tier": 2,
+    "context_window": 128000
+  },
+  "capability_probing": {
+    "enabled": true,
+    "probe_timeout_seconds": 30,
+    "probe_methods": {
+      "openai_compatible": {
+        "endpoint": "/v1/models",
+        "capability_inference": "model_id_patterns"
+      },
+      "anthropic": {
+        "endpoint": "/v1/models",
+        "capability_inference": "model_id_patterns"
+      },
+      "local_ollama": {
+        "endpoint": "/api/tags",
+        "capability_inference": "model_family_patterns"
+      }
+    }
+  },
+  "models": [
+    {
+      "id": "gpt-4o",
+      "provider": "openai",
+      "capabilities": ["text", "vision", "audio", "reasoning", "code", "web_access"],
+      "configured": false,
+      "enabled": true,
+      "quality_tier": 5,
+      "cost_tier": 4,
+      "context_window": 128000,
+      "api_key_env": "OPENAI_API_KEY",
+      "auto_detected_capabilities": []
+    },
+    {
+      "id": "gpt-4o-mini",
+      "provider": "openai",
+      "capabilities": ["text", "vision", "reasoning", "code"],
+      "configured": false,
+      "enabled": true,
+      "quality_tier": 4,
+      "cost_tier": 2,
+      "context_window": 128000,
+      "api_key_env": "OPENAI_API_KEY",
+      "auto_detected_capabilities": []
+    },
+    {
+      "id": "claude-3-5-sonnet-20241022",
+      "provider": "anthropic",
+      "capabilities": ["text", "vision", "reasoning", "code", "long_context"],
+      "configured": false,
+      "enabled": true,
+      "quality_tier": 5,
+      "cost_tier": 3,
+      "context_window": 200000,
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "auto_detected_capabilities": []
+    },
+    {
+      "id": "claude-3-haiku-20240307",
+      "provider": "anthropic",
+      "capabilities": ["text", "vision", "reasoning"],
+      "configured": false,
+      "enabled": true,
+      "quality_tier": 3,
+      "cost_tier": 1,
+      "context_window": 200000,
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "auto_detected_capabilities": []
+    },
+    {
+      "id": "qwen-vl-max",
+      "provider": "qwen",
+      "capabilities": ["text", "vision", "ocr", "reasoning"],
+      "configured": false,
+      "enabled": true,
+      "quality_tier": 4,
+      "cost_tier": 2,
+      "context_window": 32000,
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "auto_detected_capabilities": []
+    },
+    {
+      "id": "qwen-audio-turbo",
+      "provider": "qwen",
+      "capabilities": ["text", "audio", "speech_recognition"],
+      "configured": false,
+      "enabled": true,
+      "quality_tier": 3,
+      "cost_tier": 2,
+      "context_window": 8192,
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "auto_detected_capabilities": []
+    },
+    {
+      "id": "llava:13b",
+      "provider": "ollama",
+      "capabilities": ["text", "vision"],
+      "configured": false,
+      "enabled": true,
+      "quality_tier": 2,
+      "cost_tier": 0,
+      "context_window": 4096,
+      "api_key_env": null,
+      "base_url": "http://localhost:11434",
+      "auto_detected_capabilities": []
+    },
+    {
+      "id": "whisper.cpp",
+      "provider": "local",
+      "capabilities": ["audio", "speech_recognition", "transcription"],
+      "configured": false,
+      "enabled": true,
+      "quality_tier": 2,
+      "cost_tier": 0,
+      "context_window": 0,
+      "api_key_env": null,
+      "auto_detected_capabilities": []
+    }
+  ]
+}

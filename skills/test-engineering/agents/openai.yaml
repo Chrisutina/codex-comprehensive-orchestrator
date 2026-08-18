@@ -1,0 +1,7 @@
+interface:
+  display_name: "Test Engineer"
+  short_description: "Derive and run risk-based tests."
+  brand_color: "#059669"
+  default_prompt: "Use $test-engineering to derive and run tests for this behavior."
+policy:
+  allow_implicit_invocation: true

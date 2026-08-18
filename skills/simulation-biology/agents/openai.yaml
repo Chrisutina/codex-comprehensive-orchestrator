@@ -1,0 +1,7 @@
+interface:
+  display_name: "Science and Biology"
+  short_description: "Run reproducible simulations and bioinformatics."
+  brand_color: "#16A34A"
+  default_prompt: "Use $simulation-biology to complete this task with evidence and verification."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Model Routing"
+  short_description: "Choose the right model without exposing secrets."
+  brand_color: "#7C3AED"
+  default_prompt: "Use $model-routing to assess capabilities and choose the safest effective model path."
+policy:
+  allow_implicit_invocation: true

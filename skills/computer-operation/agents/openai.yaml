@@ -1,0 +1,7 @@
+interface:
+  display_name: "Computer Operator"
+  short_description: "Safely operate browsers and desktop software."
+  brand_color: "#F59E0B"
+  default_prompt: "Use $computer-operation to complete this task with evidence and verification."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Universal Orchestrator"
+  short_description: "Route, execute, verify, and synthesize any task."
+  brand_color: "#4F46E5"
+  default_prompt: "Use $orchestrate to complete this task with evidence and verification."
+policy:
+  allow_implicit_invocation: true

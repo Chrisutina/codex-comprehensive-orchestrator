@@ -1,0 +1,7 @@
+interface:
+  display_name: "Humanities Reader"
+  short_description: "Analyze poetry, philosophy, and quotations."
+  brand_color: "#9333EA"
+  default_prompt: "Use $humanities to complete this task with evidence and verification."
+policy:
+  allow_implicit_invocation: true

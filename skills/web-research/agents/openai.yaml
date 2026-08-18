@@ -1,0 +1,7 @@
+interface:
+  display_name: "Web Research"
+  short_description: "Fact-check claims and synthesize sources."
+  brand_color: "#0F766E"
+  default_prompt: "Use $web-research to complete this task with evidence and verification."
+policy:
+  allow_implicit_invocation: true
